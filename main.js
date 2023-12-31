@@ -108,7 +108,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `MysticSession`;
+global.authFile = `AlacranSession`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -176,7 +176,7 @@ global.conn = makeWASocket(connectionOptions);
 
 conn.isInit = false;
 conn.well = false;
-conn.logger.info(`[ 👻 ] Cargando...\n`);
+conn.logger.info(`[ 🇪🇬 ] Cargando...\n`);
 
 if (!opts['test']) {
   if (global.db) {
@@ -198,7 +198,7 @@ if (opts['server']) (await import('./server.js')).default(global.conn, PORT);
         Aunque no dudara tan solo un segundo
         que me arrepiento de ser un grasoso
         Por que la grasa es un sentimiento
-        - El waza 👻👻👻👻 (Aiden)            
+        - El waza 🇪🇬🇪🇬🇪🇬🇪🇬 (Aiden)            
         
    Yo tambien se hacer momazos Aiden...
         ahi te va el ajuste de los borrados
@@ -221,13 +221,13 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./MysticSession")
+let directorio = readdirSync("./AlacranSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./MysticSession/${files}`)
+unlinkSync(`./AlacranSession/${files}`)
 })
 } 
 
@@ -248,11 +248,11 @@ unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
 })
 if (SBprekey.length === 0) return; //console.log(chalk.cyanBright(`=> No hay archivos por eliminar.`))
 } catch (err) {
-console.log(chalk.bold.red(`[ 👻 ] Algo salio mal durante la eliminación, archivos no eliminados`))
+console.log(chalk.bold.red(`[ 🇪🇬 ] Algo salio mal durante la eliminación, archivos no eliminados`))
 }}
 
 function purgeOldFiles() {
-const directories = ['./MysticSession/', './jadibts/']
+const directories = ['./AlacranSession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -283,36 +283,36 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) loadDatabase();
   if (update.qr != 0 && update.qr != undefined) {
-    console.log(chalk.yellow('[ 👻 ] Escanea el código QR o introduce el código de emparejamiento en WhatsApp.'));
+    console.log(chalk.yellow('[ 🇪🇬 ] Escanea el código QR o introduce el código de emparejamiento en WhatsApp.'));
   }
   if (connection == 'open') {
-    console.log(chalk.yellow('[ 👻 ] Conectado correctamente.'));
+    console.log(chalk.yellow('[ 🇪🇬 ] Conectado correctamente.'));
   }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (connection === 'close') {
     if (reason === DisconnectReason.badSession) {
-        conn.logger.error(`[ 👻 ] Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+        conn.logger.error(`[ 🇪🇬 ] Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
         //process.exit();
     } else if (reason === DisconnectReason.connectionClosed) {
-        conn.logger.warn(`[ 👻 ] Conexión cerrada, reconectando...`);
+        conn.logger.warn(`[ 🇪🇬 ] Conexión cerrada, reconectando...`);
         await global.reloadHandler(true).catch(console.error);
     } else if (reason === DisconnectReason.connectionLost) {
-        conn.logger.warn(`[ 👻 ] Conexión perdida con el servidor, reconectando...`);
+        conn.logger.warn(`[ 🇪🇬 ] Conexión perdida con el servidor, reconectando...`);
         await global.reloadHandler(true).catch(console.error);
     } else if (reason === DisconnectReason.connectionReplaced) {
-        conn.logger.error(`[ 👻 ] Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
+        conn.logger.error(`[ 🇪🇬 ] Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
         //process.exit();
     } else if (reason === DisconnectReason.loggedOut) {
-        conn.logger.error(`[ 👻 ] Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+        conn.logger.error(`[ 🇪🇬 ] Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
         //process.exit();
     } else if (reason === DisconnectReason.restartRequired) {
-        conn.logger.info(`[ 👻 ] Reinicio necesario, reinicie el servidor si presenta algún problema.`);
+        conn.logger.info(`[ 🇪🇬 ] Reinicio necesario, reinicie el servidor si presenta algún problema.`);
         await global.reloadHandler(true).catch(console.error);
     } else if (reason === DisconnectReason.timedOut) {
-        conn.logger.warn(`[ 👻 ] Tiempo de conexión agotado, reconectando...`);
+        conn.logger.warn(`[ 🇪🇬 ] Tiempo de conexión agotado, reconectando...`);
         await global.reloadHandler(true).catch(console.error);
     } else {
-        conn.logger.warn(`[ 👻 ] Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
+        conn.logger.warn(`[ 🇪🇬 ] Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
         await global.reloadHandler(true).catch(console.error);
     }
 }
@@ -351,13 +351,13 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '@user\n 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭  𝗧𝗘 𝗗𝗔 𝗟𝗔 𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗔 𝗔𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬️';
-  conn.bye = '@user\n𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 𝗗𝗜𝗖𝗘 𝗤𝗨𝗘 𝗡𝗢 𝗙𝗨𝗜𝗦𝗧𝗘 𝗗𝗜𝗚𝗡𝗫 𝗗𝗘 𝗘𝗦𝗧𝗔𝗥 𝗔𝗖𝗔 🇪🇬️';
-  conn.spromote = '𝐁𝐥𝐨𝐝𝐢𝐞 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 @user 𝗔𝗛𝗢𝗥𝗔 𝗘𝗦 𝗔𝗗𝗠𝗜𝗡 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬️';
-  conn.sdemote = '𝐁𝐥𝐨𝐝𝐢𝐞 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 @user 𝗬𝗔 𝗡𝗢 𝗘𝗦 𝗔𝗗𝗠𝗜𝗡 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬️';
-  conn.sSubject = '𝐁𝐥𝐨𝐝𝐢𝐞 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗦𝗢𝗕𝗥𝗘 𝗘𝗟 𝗖𝗔𝗠𝗕𝗜𝗢 𝗗𝗘 𝗡𝗢𝗠𝗕𝗥𝗘 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬️';
-  conn.sIcon = '𝐁𝐥𝐨𝐝𝐢𝐞 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 𝗟𝗔 𝗙𝗢𝗧𝗢 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 𝗙𝗨𝗘 𝗖𝗔𝗠𝗕𝗜𝗔𝗗𝗔 🇪🇬️';
-  conn.sRevoke = '𝐁𝐥𝐨𝐝𝐢𝐞 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 𝗔𝗛𝗢𝗥𝗔 𝗘𝗟 𝗘𝗡𝗟𝗔𝗖𝗘 𝗙𝗨𝗘 𝗖𝗔𝗠𝗕𝗜𝗔𝗗𝗢 🇪🇬️';
+  conn.welcome = '@user\n𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧  𝗧𝗘 𝗗𝗔 𝗟𝗔 𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗔 𝗔𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬';
+  conn.bye = '@user\n𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗗𝗜𝗖𝗘 𝗤𝗨𝗘 𝗡𝗢 𝗙𝗨𝗜𝗦𝗧𝗘 𝗗𝗜𝗚𝗡𝗫 𝗗𝗘 𝗘𝗦𝗧𝗔𝗥 𝗔𝗖𝗔 🇪🇬';
+  conn.spromote = '𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 @user 𝗔𝗛𝗢𝗥𝗔 𝗘𝗦 𝗔𝗗𝗠𝗜𝗡 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬';
+  conn.sdemote = '𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 @user 𝗬𝗔 𝗡𝗢 𝗘𝗦 𝗔𝗗𝗠𝗜𝗡 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬';
+  conn.sSubject = '𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗦𝗢𝗕𝗥𝗘 𝗘𝗟 𝗖𝗔𝗠𝗕𝗜𝗢 𝗗𝗘 𝗡𝗢𝗠𝗕𝗥𝗘 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🇪🇬';
+  conn.sIcon = '𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 𝗟𝗔 𝗙𝗢𝗧𝗢 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 𝗙𝗨𝗘 𝗖𝗔𝗠𝗕𝗜𝗔𝗗𝗔 🇪🇬';
+  conn.sRevoke = '𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 𝗔𝗡𝗨𝗡𝗖𝗜𝗔 𝗤𝗨𝗘 𝗔𝗛𝗢𝗥𝗔 𝗘𝗟 𝗘𝗡𝗟𝗔𝗖𝗘 𝗙𝗨𝗘 𝗖𝗔𝗠𝗕𝗜𝗔𝗗𝗢 🇪🇬';
   
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);

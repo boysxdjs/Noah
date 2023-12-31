@@ -1495,8 +1495,8 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn.conn.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️ ;;;\nFN:v \nORG:🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️ \nTITLE:\nitem1.TEL;waid=51906528530:+51 906 528 530\nitem1.X-ABLabel:🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️ \nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️ \nEND:VCARD`;
-        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️ ', contacts: [{vcard}]}}, {quoted: callmsg});
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ;;;\nFN:v \nORG:🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 \nTITLE:\nitem1.TEL;waid=51906528530:+51 906 528 530\nitem1.X-ABLabel:🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 \nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 \nEND:VCARD`;
+        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ', contacts: [{vcard}]}}, {quoted: callmsg});
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
     }
@@ -1530,19 +1530,19 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*[  🕷️ ] Ey Paraaaa Pndjx Este Comando Solo Lo Usan Los Owners*',
-    owner: '*[ 🕷️ ] Paraaa Este Comando Solo Puede Ser Usado Por El Mas Guapo Osea Yo*',
-    mods: '*[ 🕷️ ] Este Comando Solo Puede Ser Usado Por Admins Y El Bot.*',
-    premium: '*[ 🕷️ ] Si No Eres Usuario Vip Olvidate De Este Comando XD.*',
-    group: '*[ 🕷️ ] Solo Apto Para Grupps Mij@*',
-    private: '*[ 🕷️ ] Este Comando Solo Se Puede Usar En El Chat Privadp Del Bot*',
-    admin: '*[ 🕷️ ] Solo Puede Ser Usado Por Admins Bldx*',
-    botAdmin: '*[ 🕷️ ] Es Necesario Que El Mas Guapo Osea Yo Tenga Admin*',
-    unreg: '*[ 🕷️ ] Debes Estar Registrado Primerx*\n\n*[ 🕷️ ] Utiliza el comando:* _/verificar nombre.edad_ *para registrarte.*',
-    restrict: '*[ 🕷️ ] Este Comando Fie Desactivado Por El Mas Guapo*',
+    rowner: '*[  🇪🇬 ] Ey Paraaaa Pndjx Este Comando Solo Lo Usan Los Owners*',
+    owner: '*[ 🇪🇬 ] Paraaa Este Comando Solo Puede Ser Usado Por El Mas Guapo Osea Yo*',
+    mods: '*[ 🇪🇬 ] Este Comando Solo Puede Ser Usado Por Admins Y El Bot.*',
+    premium: '*[ 🇪🇬 ] Si No Eres Usuario Vip Olvidate De Este Comando XD.*',
+    group: '*[ 🇪🇬 ] Solo Apto Para Grupps Mij@*',
+    private: '*[ 🇪🇬 ] Este Comando Solo Se Puede Usar En El Chat Privadp Del Bot*',
+    admin: '*[ 🇪🇬 ] Solo Puede Ser Usado Por Admins Bldx*',
+    botAdmin: '*[ 🇪🇬 ] Es Necesario Que El Mas Guapo Osea Yo Tenga Admin*',
+    unreg: '*[ 🇪🇬 ] Debes Estar Registrado Primerx*\n\n*[ 🇪🇬 ] Utiliza el comando:* _/verificar nombre.edad_ *para registrarte.*',
+    restrict: '*[ 🇪🇬 ] Este Comando Fie Desactivado Por El Mas Guapo*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', body: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', thumbnail: imagen1, sourceUrl: 'https://instagram.com/spider.ventas.bot'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', body: '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', thumbnail: imagen1, sourceUrl: 'https://instagram.com/fantasmin.ventas.bot'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 

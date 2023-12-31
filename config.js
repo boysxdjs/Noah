@@ -10,14 +10,14 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['5491159634868', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
+  ['51937305486', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
   ['5491160413309', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', false],
-  ['51906528530', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
-  ['5493816810337', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
+  ['51937305486', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
+  ['5491160413309', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
 ];
 
-global.suittag = ['5493816810337'];
-global.prems = ['51906528530'];
+global.suittag = ['5491160413309'];
+global.prems = ['51937305486'];
 
 global.packname = '𝗮𝗰𝗮𝗯𝗮𝘀 𝗱𝗲 𝗰𝗿𝗲𝗮𝗿 𝘂𝗻 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗰𝗼𝗻 :';
 global.author = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
@@ -48,12 +48,12 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\n🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬`;
 global.gt = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
 global.mysticbot = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.md = 'https://www.instagram.com/spider.ventas.bot/';
-global.mysticbot = 'https://www.instagram.com/spider.ventas.bot/';
+global.md = 'https://www.instagram.com/fantasmin.ventas.bot/';
+global.mysticbot = 'https://www.instagram.com/fantasmin.ventas.bot/';
 global.waitt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
 global.waittt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
 global.waitttt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
-global.nomorown = '5493816810337';
+global.nomorown = '5491160413309';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
