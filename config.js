@@ -10,22 +10,22 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['51937305486', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
-  ['5491160413309', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', false],
-  ['51937305486', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
-  ['5491160413309', '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬', true],
+  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
+  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', false],
+  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
+  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
 ];
 
-global.suittag = ['5491160413309'];
-global.prems = ['51937305486'];
+global.suittag = ['51944026510'];
+global.prems = ['51944026510'];
 
 global.packname = '𝗮𝗰𝗮𝗯𝗮𝘀 𝗱𝗲 𝗰𝗿𝗲𝗮𝗿 𝘂𝗻 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗰𝗼𝗻 :';
-global.author = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.wm = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.titulowm = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.titulowm2 = `🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬`
-global.igfg = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.wait = '*[🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬] Cargando...*';
+global.author = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.wm = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.titulowm = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.titulowm2 = `🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧`
+global.igfg = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.wait = '*[🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧] Cargando...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -45,15 +45,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬`;
-global.gt = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
-global.mysticbot = '🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬';
+global.wm2 = `${dia} ${fecha}\n🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧`;
+global.gt = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.mysticbot = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
 global.md = 'https://www.instagram.com/fantasmin.ventas.bot/';
 global.mysticbot = 'https://www.instagram.com/fantasmin.ventas.bot/';
-global.waitt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
-global.waittt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
-global.waitttt = '*[ 🇪🇬 𝐁𝐥𝐨𝐝𝐢𝐞 𝐁𝐨𝐭 🇪🇬 ] Cargando...*';
-global.nomorown = '5491160413309';
+global.waitt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
+global.waittt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
+global.waitttt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
+global.nomorown = '51944026510';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
