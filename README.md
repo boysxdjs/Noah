@@ -1,11 +1,11 @@
-# `🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️` 
+# `🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈` 
  
 ```bash
 cd && termux-setup-storage && pkg update && pkg upgrade -y && pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/YHAIR1706/Full-Bot1.git && cd Full-Bot1
+git clone https://github.com/boysxdjs/Noah.git && cd Noah
 ```
 
 ```bash
