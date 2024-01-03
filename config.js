@@ -10,22 +10,22 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
-  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', false],
-  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
-  ['51944026510', '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧', true],
+  ['56944791042', '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈', true],
+  ['56944791042', '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈', false],
+  ['56944791042', '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈', true],
+  ['56944791042', '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈', true],
 ];
 
-global.suittag = ['51944026510'];
-global.prems = ['51944026510'];
+global.suittag = ['56944791042'];
+global.prems = ['56944791042'];
 
 global.packname = '𝗮𝗰𝗮𝗯𝗮𝘀 𝗱𝗲 𝗰𝗿𝗲𝗮𝗿 𝘂𝗻 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗰𝗼𝗻 :';
-global.author = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
-global.wm = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
-global.titulowm = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
-global.titulowm2 = `🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧`
-global.igfg = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
-global.wait = '*[🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧] Cargando...*';
+global.author = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
+global.wm = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
+global.titulowm = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
+global.titulowm2 = `🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈`
+global.igfg = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
+global.wait = '*[🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈] Cargando...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -45,15 +45,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧`;
-global.gt = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
-global.mysticbot = '🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧';
+global.wm2 = `${dia} ${fecha}\n🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈`;
+global.gt = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
+global.mysticbot = '🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈';
 global.md = 'https://www.instagram.com/fantasmin.ventas.bot/';
 global.mysticbot = 'https://www.instagram.com/fantasmin.ventas.bot/';
-global.waitt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
-global.waittt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
-global.waitttt = '*[ 🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧 ] Cargando...*';
-global.nomorown = '51944026510';
+global.waitt = '*[ 🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈 ] Cargando...*';
+global.waittt = '*[ 🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈 ] Cargando...*';
+global.waitttt = '*[ 🏳️‍🌈 𝗡𝗼𝗮𝗵 𝗕𝗼𝘁 🏳️‍🌈 ] Cargando...*';
+global.nomorown = '56944791042';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
