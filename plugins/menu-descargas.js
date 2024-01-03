@@ -20,35 +20,33 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = ` 🏳️‍🌈 𝗡𝗢𝗔𝗛 𝗕𝗢𝗧 🏳️‍🌈
     
-➤ *Hola, ${taguser} Este Es El Menu De Stickers 🏳️‍🌈*
+➤ *Hola, ${taguser} Este Es El Menu De Descargas*
 
- ┏━━═════⊰⊱ ⬛ ⊰⊱═════━━┓
- ►🏳️‍🌈 _${usedPrefix}sticker *<responder a img o video>*_
- ►🏳️‍🌈 _${usedPrefix}sticker *<url>*_
- ►🏳️‍🌈 _${usedPrefix}sticker2 *<responder a img o video>*_
- ►🏳️‍🌈 _${usedPrefix}sticker2 *<url>*_
- ►🏳️‍🌈 _${usedPrefix}s *<responder a img o video>*_
- ►🏳️‍🌈 _${usedPrefix}s *<url>*_
- ►🏳️‍🌈 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
- ►🏳️‍🌈 _${usedPrefix}scircle *<img>*_
- ►🏳️‍🌈 _${usedPrefix}sremovebg *<img>*_
- ►🏳️‍🌈 _${usedPrefix}semoji *<tipo> <emoji>*_
- ►🏳️‍🌈 _${usedPrefix}qc *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}attp *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}attp2 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}attp3 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}ttp *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}ttp2 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}ttp3 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}ttp4 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}ttp5 *<txt>*_
- ►🏳️‍🌈 _${usedPrefix}pat *<@tag>*_
- ►🏳️‍🌈 _${usedPrefix}slap *<@tag>*_
- ►🏳️‍🌈 _${usedPrefix}kiss *<@tag>*_
- ►🏳️‍🌈 _${usedPrefix}dado_
- ►🏳️‍🌈 _${usedPrefix}wm *<packname> <autor>*_
- ►🏳️‍🌈 _${usedPrefix}stickermarker *<efecto> <img>*_
- ►🏳️‍🌈 _${usedPrefix}stickerfilter *<efecto> <img>*_
+┏━━═════⊰⊱ ⬛ ⊰⊱═════━━┓
+ ►🏳️‍🌈 _${usedPrefix}spotify *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}play *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}instagram *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}mediafire *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}gitclone *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}gdrive *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}tiktok *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}tiktokimg *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}xnxxdl *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}xvideosdl *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}twitter *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}fb *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}ytshort *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}dapk2 *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}stickerpack *<url>*_
+ ►🏳️‍🌈 _${usedPrefix}ringtone *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}soundcloud *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}img *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}pinterest *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}wallpaper *<txt>*_
+ ►🏳️‍🌈 _${usedPrefix}pptiktok *<user>*_
+ ►🏳️‍🌈 _${usedPrefix}igstalk *<user>*_
+ ►🏳️‍🌈 _${usedPrefix}igstory *<user>*_
+ ►🏳️‍🌈 _${usedPrefix}tiktokstalk *<user>*_
 ┣━━═════⊰⊱ ⬛ ⊰⊱═════━━┛`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
@@ -63,7 +61,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
   }
 };
-handler.command = /^(Stickers|stickers)$/i;
+handler.command = /^(descargas|Descargas)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;

@@ -19,43 +19,43 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `*[❗] Los comandos +1
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `🇪🇬 𝗕𝗟𝗢𝗗𝗜𝗘 𝗕𝗢𝗧 🇪🇬
+    const str = `🏳️‍🌈 𝗡𝗢𝗔𝗛 𝗕𝗢𝗧 🏳️‍🌈
     
 ➤ *Hola, ${taguser} Mira Estos Comandos 😝*
 
 ┏━━═════⊰⊱ ⬛ ⊰⊱═════━━┓
-►🇪🇬 _${usedPrefix}pack_
-►🇪🇬 _${usedPrefix}pack2_
-►🇪🇬 _${usedPrefix}pack3_
-►🇪🇬 _${usedPrefix}videoxxx_
-►🇪🇬 _${usedPrefix}videolesbixxx_
-►🇪🇬 _${usedPrefix}tetas_
-►🇪🇬 _${usedPrefix}booty_
-►🇪🇬 _${usedPrefix}ecchi_
-►🇪🇬 _${usedPrefix}furro_
-►🇪🇬 _${usedPrefix}imagenlesbians_
-►🇪🇬 _${usedPrefix}panties_
-►🇪🇬 _${usedPrefix}pene_
-►🇪🇬 _${usedPrefix}porno_
-►🇪🇬 _${usedPrefix}randomxxx_
-►🇪🇬 _${usedPrefix}pechos_
-►🇪🇬 _${usedPrefix}yaoi_
-►🇪🇬 _${usedPrefix}yaoi2_
-►🇪🇬 _${usedPrefix}yuri_
-►🇪🇬 _${usedPrefix}yuri2_
-►🇪🇬 _${usedPrefix}trapito_
-►🇪🇬 _${usedPrefix}hentai_
-►🇪🇬 _${usedPrefix}nsfwloli_
-►🇪🇬 _${usedPrefix}nsfworgy_
-►🇪🇬 _${usedPrefix}nsfwfoot_
-►🇪🇬 _${usedPrefix}nsfwass_
-►🇪🇬 _${usedPrefix}nsfwbdsm_
-►🇪🇬 _${usedPrefix}nsfwcum_
-►🇪🇬 _${usedPrefix}nsfwero_
-►🇪🇬 _${usedPrefix}nsfwfemdom_
-►🇪🇬 _${usedPrefix}nsfwglass_
-►🇪🇬 _${usedPrefix}hentaipdf *<texto>*_
-►🇪🇬 _${usedPrefix}hentaisearch *<texto>*_
+►🏳️‍🌈 _${usedPrefix}pack_
+►🏳️‍🌈 _${usedPrefix}pack2_
+►🏳️‍🌈 _${usedPrefix}pack3_
+►🏳️‍🌈 _${usedPrefix}videoxxx_
+►🏳️‍🌈 _${usedPrefix}videolesbixxx_
+►🏳️‍🌈 _${usedPrefix}tetas_
+►🏳️‍🌈 _${usedPrefix}booty_
+►🏳️‍🌈 _${usedPrefix}ecchi_
+►🏳️‍🌈 _${usedPrefix}furro_
+►🏳️‍🌈 _${usedPrefix}imagenlesbians_
+►🏳️‍🌈 _${usedPrefix}panties_
+►🏳️‍🌈 _${usedPrefix}pene_
+►🏳️‍🌈 _${usedPrefix}porno_
+►🏳️‍🌈 _${usedPrefix}randomxxx_
+►🏳️‍🌈 _${usedPrefix}pechos_
+►🏳️‍🌈 _${usedPrefix}yaoi_
+►🏳️‍🌈 _${usedPrefix}yaoi2_
+►🏳️‍🌈 _${usedPrefix}yuri_
+►🏳️‍🌈 _${usedPrefix}yuri2_
+►🏳️‍🌈 _${usedPrefix}trapito_
+►🏳️‍🌈 _${usedPrefix}hentai_
+►🏳️‍🌈 _${usedPrefix}nsfwloli_
+►🏳️‍🌈 _${usedPrefix}nsfworgy_
+►🏳️‍🌈 _${usedPrefix}nsfwfoot_
+►🏳️‍🌈 _${usedPrefix}nsfwass_
+►🏳️‍🌈 _${usedPrefix}nsfwbdsm_
+►🏳️‍🌈 _${usedPrefix}nsfwcum_
+►🏳️‍🌈 _${usedPrefix}nsfwero_
+►🏳️‍🌈 _${usedPrefix}nsfwfemdom_
+►🏳️‍🌈 _${usedPrefix}nsfwglass_
+►🏳️‍🌈 _${usedPrefix}hentaipdf *<texto>*_
+►🏳️‍🌈 _${usedPrefix}hentaisearch *<texto>*_
 ┣━━═════⊰⊱ ⬛ ⊰⊱═════━━┛`.trim();
     if (m.isGroup) {
       await conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m});

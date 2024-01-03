@@ -18,29 +18,31 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `  🫧 𝗬𝘅𝗺𝗶𝘀 𝗕𝗼𝘁 🫧
+    const str = ` 🏳️‍🌈 𝗡𝗢𝗔𝗛 𝗕𝗢𝗧 🏳️‍🌈
     
-➤ *Hola, ${taguser} Estos Comandos Solo Pueden Ser Usado Por Admins E Incluso El Bot Debe Ser Admin 🫧️*
+➤ *Hola, ${taguser} Estos Comandos Solo Pueden Ser Usado Por Admins E Incluso El Bot Debe Ser Admin 🏳️‍🌈️*
 
  ◤━━━━━━━━━━━◥
- 🫧››  _${usedPrefix}LigaMixta5_
- 🫧››  _${usedPrefix}Liga5_
- 🫧››  _${usedPrefix}LigaMixta_
- 🫧››  _${usedPrefix}Liga_
- 🫧››  _${usedPrefix}ScrimMixta_
- 🫧››  _${usedPrefix}Scrim_
- 🫧››  _${usedPrefix}Masc4_
- 🫧››  _${usedPrefix}Masc8_
- 🫧››  _${usedPrefix}Masc12_
- 🫧››  _${usedPrefix}Masc16_
- 🫧››  _${usedPrefix}Masc20_
- 🫧››  _${usedPrefix}Masc24_
- 🫧››  _${usedPrefix}Fem4_
- 🫧››  _${usedPrefix}Fem8_
- 🫧››  _${usedPrefix}Fem12_
- 🫧››  _${usedPrefix}Fem16_
- 🫧››  _${usedPrefix}Fem20_
- 🫧››  _${usedPrefix}Fem24_
+ ►🏳️‍🌈️ _${usedPrefix}LigaMixta5_
+ ►🏳️‍🌈️ _${usedPrefix}Liga5_
+ ►🏳️‍🌈️ _${usedPrefix}LigaMixta_
+ ►🏳️‍🌈️ _${usedPrefix}Liga_
+ ►🏳️‍🌈️ _${usedPrefix}ScrimMixta_
+ ►🏳️‍🌈️ _${usedPrefix}Scrim_
+ ►🏳️‍🌈️ _${usedPrefix}Masc4_
+ ►🏳️‍🌈️ _${usedPrefix}Masc8_
+ ►🏳️‍🌈️ _${usedPrefix}Masc12_
+ ►🏳️‍🌈️ _${usedPrefix}Masc16_
+ ►🏳️‍🌈️ _${usedPrefix}Masc20_
+ ►🏳️‍🌈️ _${usedPrefix}Masc24_
+ ►🏳️‍🌈️ _${usedPrefix}Fem4_
+ ►🏳️‍🌈️ _${usedPrefix}Fem8_
+ ►🏳️‍🌈️ _${usedPrefix}Fem12_
+ ►🏳️‍🌈️ _${usedPrefix}Fem16_
+ ►🏳️‍🌈️ _${usedPrefix}Fem20_
+ ►🏳️‍🌈️ _${usedPrefix}Fem24_
+ ►🏳️‍🌈️ _${usedPrefix}Mapa / son reglas_
+ ►🏳️‍🌈️ _${usedPrefix}Apostado / son reglas_
  ◣━━━━━━━━━━━◢`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
